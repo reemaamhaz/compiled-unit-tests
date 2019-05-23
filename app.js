@@ -1,6 +1,6 @@
 module.exports = 
 {
-processAllEmployees: function (allEmployees)
+processAllEmployees: function ()
 {   
     const employeesArray = 
     [{   
@@ -42,14 +42,12 @@ processAllEmployees: function (allEmployees)
          if (!(empDep == "Human Resources" || empDep == "Corporate"))
          {
               namesLeft = employeesArray[i].name;
-              
-              return namesLeft;
          }   
     }
-
+    return namesLeft;
 },
 
-splitFullName: function (fullName) 
+splitFullName: function () 
 {
     let firstNamesArray = [];
     let lastNamesArray = [];
@@ -63,7 +61,6 @@ splitFullName: function (fullName)
         firstNamesArray.push(first);
         lastNamesArray.push(last);
    }   
-   
    return firstNamesArray;
 }, 
 
@@ -79,7 +76,6 @@ printOutFirstNames: function ()
         nameList = firstNamesArray[i];
         console.log(nameList);
     }
-    
     return nameList;
 }
 }
