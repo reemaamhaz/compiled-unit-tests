@@ -25,7 +25,7 @@ describe('app', function(){
 
     describe('printOutFirstNames()', function(){
         it('should print out the first names', function(){
-            assert.equal(printOutFirstNamesResult, 'Clark')
+            assert.equal(printOutFirstNamesResult, 'Clark');
         });
     });
 });
